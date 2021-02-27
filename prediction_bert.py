@@ -30,7 +30,7 @@ def predict_masked_sent(text, top_k=5):
 
       # Predict all tokens
       with torch.no_grad():
-          outputs = new_model(tokens_tensor)
+          outputs = model(tokens_tensor)
           predictions = outputs[0]
 
       probs = torch.nn.functional.softmax(predictions[0, masked_index], dim=-1)
