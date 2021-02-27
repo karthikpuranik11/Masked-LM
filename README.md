@@ -11,6 +11,7 @@ Trained in Python 3.7.10
 ```
 
 !pip install transformers
+! pip install nltk
 
 ```
 
@@ -21,22 +22,31 @@ Trained in Python 3.7.10
 
 ### Loading the pre-trained model
 
+Run the load_model_bert.py file by proving the appropriate path of saved.bin(https://drive.google.com/file/d/1HUP5MWisDXyJ7pJNu7mqTga4Eg3lk4vh/view?usp=sharing) file.
+
+### Predicting prepositions
+
+Run the prediction_bert.py file.
+
+To view the predictions:
+
 ```
-from transformers import BertForMaskedLM
-import torch
-import torch.nn as nn
-
-class BertPred(nn.Module):
-    def __init__(self):
-        super().__init__()
-        self.bert = BertForMaskedLM.from_pretrained('bert-base-uncased')
-
-    def forward(self, input_ids, attention_mask=None, token_type_ids=None,
-            position_ids=None, head_mask=None, labels=None):
-        return self.bert(input_ids=input_ids,labels=labels)
-
-model = BertPred()
-model.load_state_dict(torch.load('/path/for/your/saved.bin'))
-model.eval()
+preds = predict_masked_sent(sent, top_k=n)
+print(preds)
 ```
+
+where,
+sent: the sentence for which you want to predict the prepositions.
+n: number of predictions
+
+Example:
+
+preds = predicted_masked_sent('The animals came to the meeting.', 5)
+print(preds)
+
+Output:
+['The animals came to the meeting.', 'The animals came for the meeting.', 'The animals came into the meeting.', 'The animals came at the meeting.', 'The animals came from the meeting.']
+
+
+
 
