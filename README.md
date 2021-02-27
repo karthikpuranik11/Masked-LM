@@ -8,9 +8,11 @@ Preferred running environment [Google Colab](https://colab.research.google.com/)
 
 Trained in Python 3.7.10
 
-'''
+```
+
 !pip install transformers
-'''
+
+```
 
 ### Accessing the pre-trained model
 
@@ -19,7 +21,7 @@ Trained in Python 3.7.10
 
 ### Loading the pre-trained model
 
-'''
+```
 from transformers import BertForMaskedLM
 import torch
 import torch.nn as nn
@@ -36,5 +38,5 @@ class BertPred(nn.Module):
 model = BertPred()
 model.load_state_dict(torch.load('/path/for/your/saved.bin'))
 model.eval()
-'''
+```
 
