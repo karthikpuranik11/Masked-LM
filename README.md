@@ -38,9 +38,10 @@ sent: the sentence for which you want to predict the prepositions.
 n: number of predictions
 
 Example:
-
-preds = predicted_masked_sent('The animals came to the meeting.', 5)
+```
+preds = predict_masked_sent('The animals came to the meeting.', 5)
 print(preds)
+```
 
 Output:
 ['The animals came to the meeting.', 'The animals came for the meeting.', 'The animals came into the meeting.', 'The animals came at the meeting.', 'The animals came from the meeting.']
