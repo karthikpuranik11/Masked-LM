@@ -9,10 +9,8 @@ Preferred running environment [Google Colab](https://colab.research.google.com/)
 Trained in Python 3.7.10
 
 ```
-
 !pip install transformers
 ! pip install nltk
-
 ```
 
 ### Accessing the pre-trained model
@@ -47,6 +45,8 @@ print(preds)
 Output:
 ['The animals came to the meeting.', 'The animals came for the meeting.', 'The animals came into the meeting.', 'The animals came at the meeting.', 'The animals came from the meeting.']
 
-
+Note:
+1. The model doesn't neccessarily predict a preposition. To get a single prediction with a preposition, run pre_pred_bert.py.
+2. In case of multiple prepositions, only the first one is masked and predicted.
 
 
