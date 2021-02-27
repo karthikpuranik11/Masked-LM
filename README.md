@@ -15,12 +15,12 @@ Trained in Python 3.7.10
 
 ### Accessing the pre-trained model
 
-1. Open the (Google Drive)[https://drive.google.com/file/d/1HUP5MWisDXyJ7pJNu7mqTga4Eg3lk4vh/view?usp=sharing]
+1. Open the [Google Drive](https://drive.google.com/file/d/1HUP5MWisDXyJ7pJNu7mqTga4Eg3lk4vh/view?usp=sharing)
 2. Download it or add a shortcut in your drive.
 
 ### Loading the pre-trained model
 
-Run the load_model_bert.py file by proving the appropriate path of saved.bin(https://drive.google.com/file/d/1HUP5MWisDXyJ7pJNu7mqTga4Eg3lk4vh/view?usp=sharing) file.
+Run the load_model_bert.py file by proving the appropriate path of [saved.bin](https://drive.google.com/file/d/1HUP5MWisDXyJ7pJNu7mqTga4Eg3lk4vh/view?usp=sharing) file.
 
 ### Predicting prepositions
 
