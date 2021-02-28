@@ -10,7 +10,7 @@ Trained in Python 3.7.10
 
 ```
 !pip install transformers
-! pip install nltk
+!pip install nltk
 ```
 
 ### Accessing the pre-trained model
