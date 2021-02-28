@@ -34,7 +34,9 @@ print(preds)
 ```
 
 where,
+
 sent: the sentence for which you want to predict the prepositions.
+
 n: number of predictions
 
 Example:
