@@ -2,7 +2,11 @@
 
 ## BERT
 
-Preferred running environment [Google Colab](https://colab.research.google.com/)
+Preferred running environment [Google Colab](https://colab.research.google.com/).
+
+Open a new notebook and change Edit->Notebook settings->Hardware accelerator->GPU.
+Read [Getting started with Google Colab](https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c) if required.
+
 
 ### Installation
 
@@ -20,11 +24,11 @@ Trained in Python 3.7.10
 
 ### Loading the pre-trained model
 
-Run the load_model_bert.py file by providing the appropriate path of [saved.bin](https://drive.google.com/file/d/1HUP5MWisDXyJ7pJNu7mqTga4Eg3lk4vh/view?usp=sharing) file.
+Copy the code in load_model_bert.py by providing the appropriate path of [saved.bin](https://drive.google.com/file/d/1HUP5MWisDXyJ7pJNu7mqTga4Eg3lk4vh/view?usp=sharing) file and run it.
 
 ### Predicting prepositions
 
-Run the prediction_bert.py file.
+Copy the code in prediction_bert.py file and run it.
 
 To view the predictions:
 
@@ -74,11 +78,11 @@ Unzip the [new_word_output_500.zip](https://drive.google.com/file/d/1WTtGg5TdJR5
 !unzip /path/for/your/new_word_output_500.zip
 ```
 
-Run the load_model_t5.py file by providing the appropriate path of new_word_output_500 file.
+Copy the code in load_model_t5.py file by providing the appropriate path of new_word_output_500 file into the notebook and run it.
 
 ### Predicting prepositions
 
-Run the prediction_t5.py.
+Copy the code in prediction_t5.py and run it.
 
 To view the predictions:
 
