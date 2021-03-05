@@ -5,6 +5,7 @@
 Preferred running environment [Google Colab](https://colab.research.google.com/).
 
 Open a new notebook and change Edit->Notebook settings->Hardware accelerator->GPU.
+
 Read [Getting started with Google Colab](https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c) if required.
 
 
