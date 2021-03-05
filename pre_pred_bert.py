@@ -5,10 +5,12 @@ for j in range(len(a)):
   #print(a[j])
   tok = pos_tag(a[j])
   for k in range(len(tok)):
-    if tok[k][1]=='IN' or tok[k][1]=='TO':
+    if tok[k][0]=='[MASK]':
+      break
+    elif tok[k][1]=='IN' or tok[k][1]=='TO':
       pred=' '.join(a[j])
       print(pred)
+      x=1
       break
-  break
-    
-    
+  if x==1:
+     break
