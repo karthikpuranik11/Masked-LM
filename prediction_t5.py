@@ -1,6 +1,5 @@
 import nltk
-#nltk.download('all')
-#uncomment if needed
+nltk.download('averaged_perceptron_tagger')
 from nltk import pos_tag
 
 def predict_masked_sent(text):
