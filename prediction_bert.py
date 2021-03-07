@@ -1,7 +1,6 @@
 import nltk
 from transformers import BertTokenizer
-#nltk.download('all') 
-#uncomment if required
+nltk.download('averaged_perceptron_tagger')
 from nltk import pos_tag 
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
